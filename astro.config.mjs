@@ -4,6 +4,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	renderers: ['@astrojs/renderer-preact'],
 	buildOptions: {
-		site: 'https://example.com/',
+		site: 'https://gokatz.me/',
 	},
 });

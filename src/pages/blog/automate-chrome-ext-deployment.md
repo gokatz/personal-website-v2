@@ -148,7 +148,7 @@ deployExtension:
     - CLIENT_ID=${CLIENT_ID} CLIENT_SECRET=${CLIENT_SECRET} EXTENSION_ID=${EXTENSION_ID} REFRESH_TOKEN=${REFRESH_TOKEN} node ./deploy.js
 ```
 
-the credentials (${CLIENT_ID}, ${CLIENT_SECRET}, ${EXTENSION_ID}, ${REFRESH_TOKEN}) will be pulled from the environemnt variable (in case of GitLab) and passed to the `deploy.js` file (present in the root directory) as environment variable. Those varables can be accessed using `process.env` (say, to retrieve CLIENT_ID in node process, use `process.env.CLIENT_ID`)
+the credentials (`${CLIENT_ID}`, `${CLIENT_SECRET}`, `${EXTENSION_ID}`, `${REFRESH_TOKEN}`) will be pulled from the environemnt variable (in case of GitLab) and passed to the `deploy.js` file (present in the root directory) as environment variable. Those varables can be accessed using `process.env` (say, to retrieve CLIENT_ID in node process, use `process.env.CLIENT_ID`)
 
 PS: 
 * You can completely automate this without using a separate node file (`deploy.js`) with the help of `gitlab-ci.yml` file alone (using [`chrome-webstore-upload-cli`](https://github.com/DrewML/chrome-webstore-upload-cli)). But for our convenience and for better error handling, we can go with a separate node file 😉

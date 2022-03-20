@@ -155,7 +155,7 @@ After starting the server, we have to create a postgres role.
 
     CREATE ROLE electron_release_server_user ENCRYPTED PASSWORD '<PASSWORD>' LOGIN;
 
-replace <PASSWORD> with your original password. You can replace
+replace `<PASSWORD>` with your original password. You can replace
 *electron_release_server_user* with the name of your choice (*you may need to
 follow this name in the following configurations too*) . I would advise you to
 leave it undisturbed and go with the default one.
