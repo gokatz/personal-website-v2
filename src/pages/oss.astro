@@ -5,13 +5,13 @@ import BlogTitle from '../components/BlogTitle.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allProjects = await Astro.fetchContent('./projects/*.md');
-allProjects = allProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+let allOSSProjects = await Astro.fetchContent('./oss/*.md');
+allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
 <Shell>
 	{
-		allProjects.map((blog) => {
+		allOSSProjects.map((blog) => {
 			return <BlogTitle blog={blog} /> 
 		})
 	}
