@@ -1,4 +1,4 @@
-:root {
+/* :root {
 	--font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 	--font-body: 'IBM Plex Sans', var(--font-fallback);
 	--font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
@@ -110,7 +110,6 @@ nav ul {
 	padding: 0;
 }
 
-/* Typography */
 :is(h1, h2, h3, h4, h5, h6) {
 	margin-bottom: 1.38rem;
 	font-weight: 400;
@@ -198,7 +197,6 @@ strong {
 	color: inherit;
 }
 
-/* Supporting Content */
 
 code:not([class*='language']) {
 	--border-radius: 3px;
@@ -281,4 +279,4 @@ blockquote .source {
 	font-weight: 500;
 	color: var(--color);
 	font-size: 1rem;
-}
+} */

@@ -1,0 +1,29 @@
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: Inter,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+}
+
+.intro a {
+  color: white;
+  text-decoration: underline;
+}
+
+.root {
+  max-width: 1440px;
+}
+
+.tile {
+  transition: all .2s ease-in-out;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.font-monospace {
+  font-family: monospace;
+}
