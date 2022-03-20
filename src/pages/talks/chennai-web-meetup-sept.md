@@ -3,7 +3,7 @@ title: Writing Modern apps with Ember Octane
 date: "2019-09-22T10:00:00.121Z"
 template: "talk"
 draft: false
-conf_name: Chenani Web Meetup - Sept
+conf_name: Chenani Web Meetup
 links:
   - title: Meetup Home
     link: https://www.meetup.com/Chennai-Web-Meetup/events/264869798/

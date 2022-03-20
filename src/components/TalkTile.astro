@@ -1,0 +1,29 @@
+---
+import Date from './Date.astro';
+import TalkLinks from './TalkLinks.astro';
+
+const { talk } = Astro.props;
+const { title, description, date, links, conf_name } = talk || {};
+---
+
+<div class="bg-secondary-black p-10 mb-2 tile block">
+
+  <div class="text-xs mb-3 flex justify-between">
+    <span class="text-white uppercase tracking-widest">
+      {conf_name}
+    </span>
+    <span class="text-gray-400 uppercase">
+      <Date date={date} />
+    </span>
+  </div>
+
+  <h3 class="font-semibold text-white text-2xl">
+    {title}
+  </h3>
+  <div class="text-gray-400 text-sm mt-3">
+    {description}
+  </div>
+  
+  <TalkLinks links={links} />
+
+</div>

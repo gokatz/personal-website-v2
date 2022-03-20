@@ -1,7 +1,7 @@
 ---
 // Component Imports
 import Shell from '../layouts/Shell.astro';
-import BlogTitle from '../components/BlogTitle.astro';
+import TalkTile from '../components/TalkTile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
@@ -11,8 +11,8 @@ allTalks = allTalks.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date)
 
 <Shell>
 	{
-		allTalks.map((blog) => {
-			return <BlogTitle blog={blog} /> 
+		allTalks.map((talk) => {
+			return <TalkTile talk={talk} /> 
 		})
 	}
 </Shell>

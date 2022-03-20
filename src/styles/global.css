@@ -40,3 +40,11 @@ body {
   width: 18px;
   margin-right: 8px;
 }
+
+.content-group:hover .tile {
+  opacity: 0.5;
+}
+
+.content-group .tile:hover {
+  opacity: 1;
+}

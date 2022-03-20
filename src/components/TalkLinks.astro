@@ -1,0 +1,20 @@
+---
+const { links } = Astro.props;
+const linkClass = `relative inline-block mr-3 text-white 
+bg-primary-black p-2.5 px-4 uppercase text-xs talk-link
+hover:bg-primary-blue transition-all duration-500 tracking-wider`;
+---
+
+<div class="flex mt-5">
+  {
+    links.map((link) => {
+      return <a class={linkClass} href={link.link} target="_blank">{link.title}</a>
+    })
+  }
+</div>
+
+<style>
+.talk-link {
+  font-size: 70%;
+}
+</style>

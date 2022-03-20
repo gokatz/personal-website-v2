@@ -3,7 +3,7 @@ title: A Gentle into to SPA Router
 date: "2019-11-10T10:00:00.121Z"
 template: "talk"
 draft: false
-conf_name: Chenani Web Meetup - Nov
+conf_name: Chenani Web Meetup
 links:
   - title: Meetup Home
     link: https://www.meetup.com/Chennai-Web-Meetup/events/264869798/

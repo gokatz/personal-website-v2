@@ -3,7 +3,7 @@ title: Octane - Why and How?
 date: "2019-08-03T10:00:00.121Z"
 template: "talk"
 draft: false
-conf_name: Ember Chennai Meetup - Aug
+conf_name: Ember Chennai Meetup
 links:
   - title: Meetup Home
     link: https://chennaiemberjs.in?ref=gokatz.me
