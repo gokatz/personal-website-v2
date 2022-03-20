@@ -1,4 +1,6 @@
 ---
+setup: |
+  import Image from '../../components/Image.astro'
 title: "I'm back on track and you should too!"
 date: "2021-07-25T10:00:32.169Z"
 template: "post"
@@ -10,10 +12,15 @@ tags:
   - "LifeLessons"
 canonical: https://dev.to/gokatz/fun-with-foreach-1p1o
 description: "Disclaimer: Not a tech blog! TL;DR - Gonna resume my blogging habit! 🔥"
+heroImage: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gdeoigj8avhmx6w60o45.jpg"
+layout: ../../layouts/BlogPost.astro
 ---
 
-![braden-collum-9HI8UJMSdZA-unsplash](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gdeoigj8avhmx6w60o45.jpg)
-*<center> <small> [Image from From <a href="https://unsplash.com/photos/9HI8UJMSdZA" target="_blank">unsplash.com</a>] </small> </center>*
+<!-- <Image
+  className="hero-image" 
+  src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gdeoigj8avhmx6w60o45.jpg"
+  title="Image from From [unsplash.com](https://unsplash.com/photos/9HI8UJMSdZA)"
+/> -->
 
 Hello again 👋
 
@@ -23,8 +30,12 @@ Now, to the matter! It has been more than two years since I blogged on this site
 
 <br>
 
-![Drag Racing](https://media.giphy.com/media/h8ZRVXhlb39ZSNKlGv/giphy.gif)
-*<center> <small> [Image from From giphy.com] </small> </center>*
+
+<Image
+  src="https://media.giphy.com/media/h8ZRVXhlb39ZSNKlGv/giphy.gif"
+  alt="Drag Racing"
+  title="Image from From giphy.com"
+/>
 
 
 When I look back on my two years of "not writing" I can see that there was sufficient space for more innovation on my path as writing was one of the major drives that **pushes me to innovate and upgrade myself**. Also, writing helped me to **refine my ideas a lot in the past, clears my mind, and improves my concentration**. I'm missing that "me" time!
@@ -32,7 +43,3 @@ When I look back on my two years of "not writing" I can see that there was suffi
 Now, I understand that this is the apt time to resume my blogging habit. I'm gonna set a realistic interval to publish a blog - which I have to decide soon! I'll keep this space updated on the same. If you are also like me, halted your blogging habit, perhaps you can resume too at the earliest. The longest the break, the hardest it will be to resume back! (from my experience 😉)
 
 See you all in my next blog 👋
-
-
-
-

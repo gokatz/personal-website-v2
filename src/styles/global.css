@@ -16,6 +16,10 @@ body {
   max-width: 1440px;
 }
 
+.wrapper {
+  max-width: 900px;
+}
+
 .tile {
   transition: all .2s ease-in-out;
 }
@@ -26,4 +30,8 @@ body {
 
 .font-monospace {
   font-family: monospace;
+}
+
+.image-title a {
+  text-decoration: underline;
 }

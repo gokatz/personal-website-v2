@@ -7,8 +7,8 @@ const links = [{
 	title: 'Blogs',
 	url: '/'
 }, {
-	title: 'Projects',
-	url: '/projects'
+	title: 'Talks',
+	url: '/talks'
 }];
 
 // Component Script:
@@ -36,12 +36,12 @@ let permalink = 'https://gokatz.me/';
       	<Intro />
 
 				<div class="mt-14 font-monospace">
-					<div class="flex uppercase text-xs text-white items-center my-5 group cursor-pointer">
+					<!-- <div class="flex uppercase text-xs text-white items-center my-5 group cursor-pointer">
 						01 <div class="mx-3 h-0.5 bg-white w-10 group-hover:w-14 transition-all"></div> Blogs
 					</div>
 					<div class="flex uppercase text-xs text-primary-blue items-center my-5">
 						02 <div class="mx-3 h-0.5 bg-white w-14 bg-primary-blue"></div> Projects
-					</div>
+					</div> -->
 					{links.map((nav, index) => <Link nav={nav} serial={index} />)}
 				</div>
       </div>

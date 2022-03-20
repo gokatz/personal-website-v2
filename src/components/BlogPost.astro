@@ -1,5 +1,6 @@
 ---
 import Author from './Author.astro';
+import Date from './Date.astro';
 
 export interface Props {
 	title: string;
@@ -9,17 +10,19 @@ export interface Props {
 	alt: string;
 }
 
-const { title, author, publishDate, heroImage, alt } = Astro.props;
+const { title, date, heroImage, alt } = Astro.props;
 ---
 
 <div class="layout">
-	<article class="content">
+	<article class="content tracking-wider leading-7">
 		<div>
 			<header>
-				{heroImage && <img width="720" height="420" class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
-				<p class="publish-date">{publishDate}</p>
+				<p class="publish-date">
+					<Date date={date} includeDate />
+				</p>
 				<h1 class="title">{title}</h1>
-				<Author name="@FredKSchott" href="https://twitter.com/FredKSchott" />
+				<Author name="@_gokatz" href="https://twitter.com/_gokatz" />
+				{heroImage && <img class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
 			</header>
 			<main>
 				<slot />
@@ -29,12 +32,12 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 </div>
 
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400&family=Roboto+Mono:wght@500&display=swap');
 	.hero-image {
-		width: 100vw;
+		width: 1000px;
 		object-fit: cover;
 		object-position: center;
 		margin-top: 2rem;
-		margin-bottom: 4rem;
 		max-width: 1280px;
 	}
 
@@ -47,7 +50,18 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 	}
 
 	.content {
-		margin-bottom: 8rem;
+		margin-bottom: 6rem;
+    font-family: 'Merriweather', serif;
+		font-weight: 300;
+	}
+
+	.content a {
+		color: #676cdb;
+		text-decoration: underline;
+	}
+
+	.content strong, .content b {
+		color: #676cdb;
 	}
 
 	.content :global(main > * + *) {
@@ -74,6 +88,7 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 	.author,
 	.publish-date {
 		margin: 0;
+		margin-bottom: 2rem;
 	}
 
 	.publish-date,

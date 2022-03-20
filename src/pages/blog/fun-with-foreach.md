@@ -1,4 +1,6 @@
 ---
+setup: |
+  import Image from '../../components/Image.astro'
 title: "Fun With forEach"
 date: "2019-06-06T10:00:32.169Z"
 template: "post"
@@ -9,11 +11,10 @@ tags:
   - "javascript"
 canonical: https://dev.to/gokatz/fun-with-foreach-1p1o
 description: "Have fun with forEach by guessing few snippets that we might not encounter in real-time applications. Share your fun forEach snippets and let's all have fun! 👯‍♂️👯‍♂️"
+layout: ../../layouts/BlogPost.astro
+heroImage: "/assets/images/fun-with-foreach.png" 
 ---
-
-![](/media/fun-with-foreach.png)
-
-## So, what's a forEach?
+## So, what's2 a forEach?
 
 `forEach` is a little guy who iterates/loops through the array and executes the given callback for each element. It's more like the traditional `for` loop, but with a functional touch. A sample snippet would be like,
 
@@ -186,6 +187,8 @@ Hope this was fun. That's all for our little guy. There might be a lot of other 
 
 And a fun fact: This title was inspired from the awesome (😉) show hosted by Sheldon and Amy in **The Big Bang Theory** series, named, **Fun With Flags.**
 
-![](/media/bbt-fwf.jpg)
+<br />
+
+<Image src="/assets/images/bbt-fwf.jpg">
 
 

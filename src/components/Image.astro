@@ -1,0 +1,16 @@
+---
+import { Markdown } from 'astro/components';
+
+let { src, alt, title, className } = Astro.props;
+alt = alt || "Cover";
+const imgClass = `${className} w-3/3 inline-block`;
+---
+
+<div class="text-center">
+  <div>
+    <img src={src} alt={alt} class={imgClass} />  
+  </div>
+  <Markdown>
+    <i> <small class="text-gray-400 image-title"> {title} </small> </i>    
+  </Markdown>
+</div>
