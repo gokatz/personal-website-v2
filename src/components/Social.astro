@@ -1,0 +1,52 @@
+---
+import TwitterIcon from './social/twitter.astro';
+import GithubIcon from './social/github.astro';
+import LinkedInIcon from './social/linkedin.astro';
+
+const { name } = Astro.props;
+
+const icons = {
+  twitter: {
+    icon: TwitterIcon,
+    title: 'Twitter',
+    url: 'https://twitter.com/_gokatz'
+  },
+  github: {
+    icon: GithubIcon,
+    title: 'GitHub',
+    url: 'https://github.com/gokatz'
+  },
+  linkedin: {
+    icon: LinkedInIcon,
+    title: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/gokulkathirvel/'
+  }
+}
+
+const { icon: Icon, title, url } = (icons[name] || {});
+---
+
+<a 
+  class="text-white text-sm mx-4 flex social-icons relative cursor-pointer" 
+  href={url} 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <Icon /> {title}
+  <div class="absolute line bg-primary-blue"></div>
+</a>
+
+<style>
+  .line {
+    height: 0;
+    bottom: -1px;
+    left: 6px;
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .social-icons:hover .line {
+    height: 13px;
+    width: 100%;
+  }
+</style>

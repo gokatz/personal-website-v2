@@ -35,3 +35,8 @@ body {
 .image-title a {
   text-decoration: underline;
 }
+
+.social-icons svg {
+  width: 18px;
+  margin-right: 8px;
+}

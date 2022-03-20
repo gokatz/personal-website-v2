@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Intro from '../components/Intro.astro';
 import Link from '../components/Link.astro';
+import Footer from '../components/Footer.astro';
 
 const links = [{
 	title: 'Blogs',
@@ -38,18 +39,22 @@ let permalink = 'https://gokatz.me/';
 
 	<body class="bg-primary-black">
 		<div class="flex justify-between root mx-auto relative">
-			<div class="w-2/5 h-screen py-20 pl-20 fixed">
-      	<Intro />
-
-				<div class="mt-14 font-monospace">
-					<!-- <div class="flex uppercase text-xs text-white items-center my-5 group cursor-pointer">
-						01 <div class="mx-3 h-0.5 bg-white w-10 group-hover:w-14 transition-all"></div> Blogs
+			<div class="w-2/5 h-screen py-20 pl-20 fixed flex flex-col justify-between">
+				
+				<div>
+					<Intro />
+					<div class="mt-14 font-monospace">
+						<!-- <div class="flex uppercase text-xs text-white items-center my-5 group cursor-pointer">
+							01 <div class="mx-3 h-0.5 bg-white w-10 group-hover:w-14 transition-all"></div> Blogs
+						</div>
+						<div class="flex uppercase text-xs text-primary-blue items-center my-5">
+							02 <div class="mx-3 h-0.5 bg-white w-14 bg-primary-blue"></div> Projects
+						</div> -->
+						{links.map((nav, index) => <Link nav={nav} serial={index} />)}
 					</div>
-					<div class="flex uppercase text-xs text-primary-blue items-center my-5">
-						02 <div class="mx-3 h-0.5 bg-white w-14 bg-primary-blue"></div> Projects
-					</div> -->
-					{links.map((nav, index) => <Link nav={nav} serial={index} />)}
 				</div>
+
+				<Footer />
       </div>
 
       <div class="w-3/5 absolute right-0 p-20">
