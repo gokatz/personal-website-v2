@@ -11,6 +11,7 @@ tags:
   - "css"
   - "Tailwind Toolkit"
 description: "Learn how to setup tailwind css in a Vue CLI 3 project."
+layout: ../../layouts/BlogPost.astro
 ---
 
 Setting up Tailwind is really an easier process consist of few simple steps. But, developers who are new to Webpack or common CSS configuration like PostCSS (like me) might feel it difficult to join all the parts. This post will help to set up and run tailwind with basic configuration in a Vue CLI 3 project.

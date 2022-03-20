@@ -11,6 +11,7 @@ tags:
   - "CI/CD"
   - "js"
 description: "UI testing the chrome extension (or any extension for that matter) is tricky as it has its own workflow and environment to run. This post will walk you through the process of automating those test using Puppeteer, an API library to control Chrome."
+layout: ../../layouts/BlogPost.astro
 ---
 
 Building a chrome extension is definitely a fun process! Chrome extensions open a whole new set of doors to the web developers and users. However, testing those awesome extensions is not as straight forward as testing any conventional web application in some aspects. In this post, Let's walk together with the path of adding our first test case that ensures the best for our extensions.

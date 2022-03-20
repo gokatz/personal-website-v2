@@ -10,6 +10,7 @@ tags:
   - "automation"
   - "CI/CD"
 description: "My list of features and improvements that I love to see in Ember core framework in 2019"
+layout: ../../layouts/BlogPost.astro
 ---
 
 This is the first time I'm participating in the Ember roadmap blog post series. I personally like Ember and it's abstractions to enable and increase productivity.

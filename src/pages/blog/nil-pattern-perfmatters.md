@@ -10,6 +10,7 @@ tags:
   - "js"
   - "performance"
 description: "Setting up a auto-updater would be something significant in many case and this post is all about setting up a auto updater successfully!"
+layout: ../../layouts/BlogPost.astro
 ---
 
 While delivering content to our users via the internet, performance is one of the key checkboxes that need to be checked. Even though our content is awesome, we may face churns over our products if our site/app is not performing well. We need to *Start Fast! and Stay Fast!!* to grab and retain our user base.

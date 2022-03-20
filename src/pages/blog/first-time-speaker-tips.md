@@ -12,6 +12,7 @@ tags:
   - "ember"
 canonical: https://dev.to/gokatz/first-time-speaker-fts-with-few-tips-45po
 description: "Experience from my first ever public speaking journey. Penned down a few suggestions I got as well as I learned from the experience for fellow First Time Speakers (FTS) 😉"
+layout: ../../layouts/BlogPost.astro
 ---
 
 **FTS**: First Time Speaker. Fake abbreviation made by me 😉

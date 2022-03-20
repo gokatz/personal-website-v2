@@ -11,6 +11,7 @@ tags:
   - "CI/CD"
 canonical: https://medium.com/@gokatz/electron-autoupdater-101-f5a268766e75
 description: "Setting up a auto-updater would be something significant in many case and this post is all about setting up a auto updater successfully!"
+layout: ../../layouts/BlogPost.astro
 ---
 
 Setting up a AutoUpdater for your electron app is actually a simple process with some time on terminal and editor. 

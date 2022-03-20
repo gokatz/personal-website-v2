@@ -10,6 +10,7 @@ tags:
   - "automation"
   - "CI/CD"
 description: "Building a chrome extension is fun! But deployment is a bit tedious as it requires few manual processes. In this post, I’ll Show you how to automate the build, upload and publish process of your chrome extension in a matter of few minutes."
+layout: ../../layouts/BlogPost.astro
 ---
 
 Building a chrome extension is fun! But deployment is a bit tedious as it requires few manual processes. In this post, I’ll Show you how to automate the build, upload and publish process of your chrome extension in a matter of few minutes 🔥🔥

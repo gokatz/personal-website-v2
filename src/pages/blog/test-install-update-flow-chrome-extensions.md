@@ -10,6 +10,7 @@ tags:
   - "js"
   - "testing"
 description: "Testing the extension update and initial install flow could be tricky. This post will walk you through few steps to test all such flows during development stage itself."
+layout: ../../layouts/BlogPost.astro
 ---
 
 This is a very tiny post pointing out to an existing chrome app development guide about testing chrome extension with respect to install and update flows. These testing may become tricky because during the development stage we use [**Unpacked extensions**](https://developer.chrome.com/extensions/getstarted#manifest). With this method, we may not get to test the actual install and update flows as the related event will not be fired. 

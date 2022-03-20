@@ -11,6 +11,7 @@ tags:
   - "build"
 canonical: https://dev.to/gokatz/how-we-cut-down-our-ember-build-time-ehh
 description: "Tricks we incorporate to reduce our build time to almost half"
+layout: ../../layouts/BlogPost.astro
 ---
 
 The journey starts about 4 months back when my ember build took even 2 mins (at worst case) to rebuild (incremental rebuild). You know it's really painful 😰 when you need to wait for 2 mins to get your changes in the browser. So I decided to dive into the build process to know which of the build task took a long time to finish. Actually, there are many! Some of those are:
