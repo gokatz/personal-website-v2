@@ -1,7 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Intro from '../components/Intro.astro';
-import Link from '../components/Link.astro';
+import NavLink from '../components/NavLink.astro';
 import Footer from '../components/Footer.astro';
 
 const links = [{
@@ -50,7 +50,7 @@ let permalink = 'https://gokatz.me/';
 						<div class="flex uppercase text-xs text-primary-blue items-center my-5">
 							02 <div class="mx-3 h-0.5 bg-white w-14 bg-primary-blue"></div> Projects
 						</div> -->
-						{links.map((nav, index) => <Link nav={nav} serial={index} />)}
+						{links.map((nav, index) => <NavLink nav={nav} serial={index} />)}
 					</div>
 				</div>
 

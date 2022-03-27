@@ -1,0 +1,15 @@
+---
+export interface Props {
+	nav: any;
+	serial: any;
+}
+
+const { nav, serial } = Astro.props;
+const isActive = Astro.request.url.pathname.endsWith(nav.url);
+const className = `flex uppercase text-xs ${isActive ? 'text-primary-blue' : 'text-white'}
+items-center py-3 group cursor-pointer`;
+---
+
+<a class={className} href={nav.url}>
+  0{serial + 1} <div class={`mx-3 h-0.5 ${isActive ? 'bg-primary-blue w-16' : 'bg-white w-10 '} group-hover:w-16 transition-all`}></div> {nav.title}
+</a>
