@@ -1,0 +1,29 @@
+---
+import Date from './Date.astro';
+import SimpleLinks from './SimpleLinks.astro';
+
+const { content = {} } = Astro.props;
+const { title, description, date, links } = content;
+const containerClass = `bg-secondary-black p-10 m-1 
+tile mansion-tile flex flex-col justify-between`;
+---
+
+<article class={containerClass}>
+  <div>
+    <div class="text-xs mb-3 flex justify-between">
+      <span class="text-gray-400 uppercase">
+        <Date date={date} />
+      </span>
+    </div>
+
+    <h3 class="font-semibold text-white text-2xl">
+      {title}
+    </h3>
+    <div class="text-gray-400 text-sm mt-3">
+      {description}
+    </div>
+  </div>
+
+  <SimpleLinks links={links} />
+
+</article>

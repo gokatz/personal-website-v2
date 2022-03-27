@@ -1,0 +1,23 @@
+---
+import LinkIcon from './icons/link.astro';
+
+const { links = [] } = Astro.props;
+const linkClass = `text-gray-300 hover:text-white 
+text-sm mr-3 mb-2 link-line-design`;
+---
+
+<Fragment>
+  {
+    links && (
+      <div class="flex flex-wrap mt-8">
+        {
+          links.map((link) => {
+            return (
+              <a class="text-gray-300 hover:text-white text-sm mr-3 mb-2 link-line-design inline-block" href={link.link} target="_blank"> <LinkIcon /> {link.title}</a>
+            )
+          })
+        }
+      </div>
+    )
+  }
+</Fragment>

@@ -29,7 +29,7 @@ body {
 }
 
 .font-monospace {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .image-title a {
@@ -47,4 +47,30 @@ body {
 
 .content-group .tile:hover {
   opacity: 1;
+}
+
+.mansion-tile {
+  /* m-1 is used as margin */
+  width: calc(50% - 0.5rem); 
+}
+
+.link-line-design {
+  position: relative;
+}
+
+.link-line-design::after {
+  content: " ";
+  position: absolute;
+  /* .bg-primary-blue */
+  background-color: #676cdb; 
+  height: 0;
+  bottom: -1px;
+  left: 6px;
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
+
+.link-line-design:hover:after {
+  height: 13px;
+  width: 100%;
 }

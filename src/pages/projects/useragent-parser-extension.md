@@ -17,9 +17,9 @@ links:
   - title: Learn More
     internal: true
     link: projects/useragent-parser-extension
-  - title: Chrome Store
+  - title: Chrome
     link: https://addons.mozilla.org/en-US/firefox/addon/user-agent-parser/
-  - title: Mozilla Add-on Store
+  - title: Mozilla
     link: https://addons.mozilla.org/en-US/firefox/addon/user-agent-parser/
 description: "Minimal User agent parser browser extension. Know the browser details right away just by selecting the user agent string."
 ---

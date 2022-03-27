@@ -1,7 +1,7 @@
 ---
 // Component Imports
 import Shell from '../layouts/Shell.astro';
-import BlogTitle from '../components/BlogTitle.astro';
+import MansionTile from '../components/MansionTile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
@@ -10,9 +10,11 @@ allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.date).valueOf() - new 
 ---
 
 <Shell>
-	{
-		allOSSProjects.map((blog) => {
-			return <BlogTitle blog={blog} /> 
-		})
-	}
+	<div class="flex flex-wrap">
+		{
+			allOSSProjects.map((project) => {
+				return <MansionTile content={project} /> 
+			})
+		}
+	</div>
 </Shell>

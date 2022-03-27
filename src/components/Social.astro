@@ -27,26 +27,10 @@ const { icon: Icon, title, url } = (icons[name] || {});
 ---
 
 <a 
-  class="text-white text-sm mx-4 flex social-icons relative cursor-pointer" 
+  class="text-white text-sm mx-4 flex social-icons relative cursor-pointer link-line-design" 
   href={url} 
   target="_blank" 
   rel="noopener noreferrer"
 >
   <Icon /> {title}
-  <div class="absolute line bg-primary-blue"></div>
 </a>
-
-<style>
-  .line {
-    height: 0;
-    bottom: -1px;
-    left: 6px;
-    z-index: -1;
-    transition: all 0.1s ease-in-out;
-  }
-
-  .social-icons:hover .line {
-    height: 13px;
-    width: 100%;
-  }
-</style>
