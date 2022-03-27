@@ -27,3 +27,16 @@ tile mansion-tile flex flex-col justify-between`;
   <SimpleLinks links={links} />
 
 </article>
+
+<style>
+
+.mansion-tile {
+  /* m-1 is used as margin */
+  width: calc(50% - 0.5rem); 
+}
+
+/*  for initial shift */
+.mansion-tile:nth-child(odd) {
+  transform: translateY(-30px);
+}
+</style>
