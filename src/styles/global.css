@@ -28,7 +28,7 @@ body {
   transform: scale(1.1) !important;
 }
 
-.tile:hover:nth-child(odd) {
+.tile.mansion-tile:hover:nth-child(odd) {
   /*
     handled translate here as while hovering
     this will override mansion-tile's translateY
