@@ -2,11 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 // import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
+import BackToList from '../components/BackToList.astro';
 import '../styles/blog.css';
 
 
 const { content } = Astro.props;
-const { title, description, date, author, heroImage, permalink, alt } = content;
+const { title, description, date, author, heroImage, permalink, alt, template } = content;
+
 ---
 
 <html lang={content.lang || 'en'}>
@@ -16,6 +18,7 @@ const { title, description, date, author, heroImage, permalink, alt } = content;
 	</head>
 
 	<body class="bg-primary-black ">
+		<BackToList template={template} />
 		<div class="wrapper bg-white text-black mx-auto p-10 m-10 prose prose-a:text-primary-blue">
 			<BlogPost {title} {author} {heroImage} {date} {alt}>
 				<slot />

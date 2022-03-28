@@ -22,6 +22,7 @@ links:
   - title: Mozilla
     link: https://addons.mozilla.org/en-US/firefox/addon/user-agent-parser/
 description: "Minimal User agent parser browser extension. Know the browser details right away just by selecting the user agent string."
+layout: ../../layouts/BlogPost.astro
 ---
 
 Checking the browser details from the user agent string is always a part of a developer's job. In one way or another, we use online parsers to detect the browser details.

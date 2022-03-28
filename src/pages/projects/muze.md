@@ -19,6 +19,7 @@ links:
   - title: Chrome
     link: https://bit.ly/muze-ext
 description: "Manage and control multiple YouTube, SoundCloud, JioSaavn and Gaana tabs with ease! (more music services on its way...)"
+layout: ../../layouts/BlogPost.astro
 ---
 
 Manage and control multiple YouTube, SoundCloud, JioSaavn, Gaana, Spotify, Youtube Music tabs with ease! (more music services are on its way...)

@@ -1,0 +1,15 @@
+---
+import BackIcon from './icons/back.astro';
+
+const { template } = Astro.props;
+const listRoutes = {
+  project: '/projects',
+  post: '/',
+}
+
+const url = listRoutes[template];
+---
+
+<a class="fixed top-0 left-0 m-10 bg-white p-2 px-8 rounded-full flex" href={url}>
+  <BackIcon className="w-5 inline mr-2" /> Back
+</a>
