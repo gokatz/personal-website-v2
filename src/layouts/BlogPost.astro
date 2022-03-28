@@ -1,7 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
+// import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
+import '../styles/blog.css';
 
 
 const { content } = Astro.props;
@@ -10,12 +11,12 @@ const { title, description, date, author, heroImage, permalink, alt } = content;
 
 <html lang={content.lang || 'en'}>
 	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.css"/>
 		<BaseHead {title} {description} {permalink} />
 	</head>
 
 	<body class="bg-primary-black ">
-		<div class="wrapper text-white mx-auto p-10 m-10 bg-secondary-black">
+		<div class="wrapper bg-white text-black mx-auto p-10 m-10 prose prose-a:text-primary-blue">
 			<BlogPost {title} {author} {heroImage} {date} {alt}>
 				<slot />
 			</BlogPost>

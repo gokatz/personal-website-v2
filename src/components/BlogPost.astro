@@ -14,14 +14,14 @@ const { title, date, heroImage, alt } = Astro.props;
 ---
 
 <div class="layout">
-	<article class="content tracking-wider leading-7">
+	<article class="content leading-7">
 		<div>
 			<header>
 				<p class="publish-date">
 					<Date date={date} includeDate />
 				</p>
 				<h1 class="title">{title}</h1>
-				<Author name="@_gokatz" href="https://twitter.com/_gokatz" />
+				<!-- <Author name="@_gokatz" href="https://twitter.com/_gokatz" /> -->
 				{heroImage && <img class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
 			</header>
 			<main>
@@ -32,7 +32,6 @@ const { title, date, heroImage, alt } = Astro.props;
 </div>
 
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400&family=Roboto+Mono:wght@500&display=swap');
 	.hero-image {
 		width: 1000px;
 		object-fit: cover;
@@ -45,13 +44,12 @@ const { title, date, heroImage, alt } = Astro.props;
 		.hero-image {
 			height: 260px;
 			margin-top: 0;
-			margin-bottom: 2rem;
 		}
 	}
 
 	.content {
 		margin-bottom: 6rem;
-    font-family: 'Merriweather', serif;
+		font-family: 'Inter', sans-serif;
 		font-weight: 300;
 	}
 
@@ -79,8 +77,8 @@ const { title, date, heroImage, alt } = Astro.props;
 		align-items: center;
 		justify-content: center;
 
-		padding-bottom: 2rem;
-		margin-bottom: 2rem;
+		/* padding-bottom: 2rem; */
+		margin-bottom: 0rem; 
 		border-bottom: 4px solid var(--theme-divider);
 	}
 

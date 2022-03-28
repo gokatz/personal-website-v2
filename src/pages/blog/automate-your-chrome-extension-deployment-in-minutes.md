@@ -57,7 +57,9 @@ Here comes the another package, [chrome-webstore-upload](https://github.com/Drew
 
 Install the package on your extension project using the command:
 
-`yarn add chrome-webstore-upload -D`
+```bash
+yarn add chrome-webstore-upload -D
+```
 
 To upload the file to webstore, this package needs `client ID`, `client secret` and `refresh token` of your extension project. If you are not familiar with those terminologies, don't worry. To use the webstore APIs, Google needs some identifiers and credentials to authorize you and identify your extension. 
 

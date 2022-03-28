@@ -6,7 +6,7 @@ export interface Props {
 
 const { nav, serial } = Astro.props;
 const isActive = Astro.request.url.pathname.endsWith(nav.url);
-const className = `flex uppercase text-xs ${isActive ? 'text-primary-blue' : 'text-white'}
+const className = `flex uppercase text-xs ${isActive ? 'text-primary-blue font-bold' : 'text-white'}
 items-center py-3 group cursor-pointer`;
 ---
 
