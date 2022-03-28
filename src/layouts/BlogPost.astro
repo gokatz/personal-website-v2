@@ -7,14 +7,14 @@ import '../styles/blog.css';
 
 
 const { content } = Astro.props;
-const { title, description, date, author, heroImage, permalink, alt, template } = content;
+const { title, description, date, author, heroImage, permalink, alt, template, canonical } = content;
 
 ---
 
 <html lang={content.lang || 'en'}>
 	<head>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.css"/>
-		<BaseHead {title} {description} {permalink} />
+		<BaseHead {title} {description} {permalink} {canonical} />
 	</head>
 
 	<body class="bg-primary-black ">
