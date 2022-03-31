@@ -10,6 +10,16 @@ const listRoutes = {
 const url = listRoutes[template];
 ---
 
-<a class="fixed top-0 left-0 m-10 bg-white p-2 px-8 rounded-full flex" href={url}>
-  <BackIcon className="w-5 inline mr-2" /> Back
+<a class="
+    flex fixed top-0 left-0 
+    m-5 lg:m-10 
+    bg-gray-700 lg:bg-white 
+    p-2 px-2 lg:px-8 
+    rounded-full shadow-md 
+    text-white lg:text-black
+  " 
+  href={url}
+>
+  <BackIcon className="w-5 inline lg:mr-2" /> 
+  <span class="hidden lg:block">Back</span>
 </a>

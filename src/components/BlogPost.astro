@@ -37,7 +37,13 @@ const { title, date, heroImage, alt } = Astro.props;
 		object-fit: cover;
 		object-position: center;
 		margin-top: 2rem;
-		max-width: 1280px;
+		max-width: 100%;
+	}
+
+	@media (min-width: 1060px) {
+		.hero-image {
+			max-width: 1280px;
+		}
 	}
 
 	@media (max-width: 50em) {
