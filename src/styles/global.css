@@ -9,7 +9,6 @@ body {
 
 .intro a {
   color: white;
-  text-decoration: underline;
 }
 
 .root {
@@ -28,12 +27,14 @@ body {
   transform: scale(1.1) !important;
 }
 
-.tile.mansion-tile:hover:nth-child(odd) {
-  /*
-    handled translate here as while hovering
-    this will override mansion-tile's translateY
-  */
-  transform: translateY(-30px) scale(1.1) !important;
+@media (min-width: 900px) {
+  .tile.mansion-tile:hover:nth-child(odd) {
+    /*
+      handled translate here as while hovering
+      this will override mansion-tile's translateY
+    */
+    transform: translateY(-30px) scale(1.1) !important;
+  }  
 }
 
 .font-monospace {
