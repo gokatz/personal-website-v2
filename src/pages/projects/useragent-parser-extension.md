@@ -29,7 +29,7 @@ Checking the browser details from the user agent string is always a part of a de
 
 With **User Agent Parser Mozilla Add-on**, you can now get to know the browser and OS details just by selecting the user agent string (maybe from your Logs dump). Yeah, it's that simple.
 
-### How to use:
+<!-- ### How to use:
 
 **FireFox**
 
@@ -37,7 +37,7 @@ With **User Agent Parser Mozilla Add-on**, you can now get to know the browser a
 
 **Chrome**
 
-![How to use](/media/chrome-ext-working.gif)
+![How to use](/media/chrome-ext-working.gif) -->
 
 
 ### Useful Links:
