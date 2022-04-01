@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Analytics from '../components/Analytics.astro';
+import InstantLoader from '../components/InstantLoader.astro';
 import siteData from '../data';
 
 const { 
@@ -22,9 +23,10 @@ const {
 		/>
 	</head>
 
-	<body>
+	<body data-no-instant>
 		<slot />
 
 		<Analytics />
+		<InstantLoader />
 	</body>
 </html>
