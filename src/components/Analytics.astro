@@ -1,16 +1,16 @@
 ---
+// To use in the src of the script tag
 import siteData from '../data';
-
-const { gaId } = siteData;
 ---
-<div>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', gaId);
-  </script>
-</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${siteData.gaId}`}></script>
+<script type="module">
+  import siteData from '../data';
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', siteData.gaId);
+</script>

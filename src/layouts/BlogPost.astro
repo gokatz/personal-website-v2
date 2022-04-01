@@ -9,14 +9,17 @@ import '../styles/blog.css';
 
 
 const { content } = Astro.props;
-const { title, description, date, author, heroImage, permalink, alt, template, canonical } = content;
+const { 
+	title, description, date, author, heroImage, 
+	permalink, alt, template, canonical, slug 
+} = content;
 const blogWindowTitle = `${title} - ${siteData.siteName}`;
 
 ---
 <Shell title={blogWindowTitle} {description} {permalink} {canonical}>
 	<BackToList template={template} />
 	<div class="wrapper bg-white text-black mx-auto p-6 md:p-10 m-10 prose prose-a:text-primary-blue">
-		<BlogPost {title} {author} {heroImage} {date} {alt}>
+		<BlogPost {title} {author} {heroImage} {date} {alt} {slug}>
 			<slot />
 		</BlogPost>
 	</div>

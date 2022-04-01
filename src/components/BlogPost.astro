@@ -1,7 +1,7 @@
 ---
-// import ReactDisqusComments from 'react-disqus-comments';
 // import Author from './Author.astro';
 import Date from './Date.astro';
+import Comments from './Comments.jsx';
 
 export interface Props {
 	title: string;
@@ -11,7 +11,7 @@ export interface Props {
 	alt: string;
 }
 
-const { title, date, heroImage, alt } = Astro.props;
+const { title, date, heroImage, alt, slug } = Astro.props;
 ---
 
 <div class="layout">
@@ -31,12 +31,7 @@ const { title, date, heroImage, alt } = Astro.props;
 		</div>
 	</article>
 
-	<!-- <ReactDisqusComments
-		shortname={"gokatz"}
-		identifier={postTitle}
-		title={postTitle}
-		url={siteUrl + postSlug}
-	/> -->
+	<Comments slug={slug} title={title} client:only />
 </div>
 
 <style>
