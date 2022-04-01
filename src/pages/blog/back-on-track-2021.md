@@ -32,8 +32,8 @@ Now, to the matter! It has been more than two years since I blogged on this site
 
 
 <Image
-  src="https://media.giphy.com/media/h8ZRVXhlb39ZSNKlGv/giphy.gif"
-  alt="Drag Racing"
+  src="/assets/images/schitts-creek.webp"
+  alt="We don't have the time"
   title="Image from From giphy.com"
 />
 
