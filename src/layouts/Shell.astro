@@ -1,58 +1,30 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Intro from '../components/Intro.astro';
-import NavLink from '../components/NavLink.astro';
-import Footer from '../components/Footer.astro';
+import Analytics from '../components/Analytics.astro';
 import siteData from '../data';
 
-const links = [{
-	title: 'Blogs',
-	url: '/'
-}, {
-	title: 'Projects',
-	url: '/projects'
-}, {
-	title: 'OSS Love',
-	url: '/oss'
-}, {
-	title: 'Talks',
-	url: '/talks'
-}];
+const { 
+	title = siteData.siteName, 
+	description = siteData.siteDescription, 
+	permalink = siteData.permalink, 
+	canonical
+} = Astro.props;
 
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead 
-			title={siteData.siteName} 
-			description={siteData.siteDescription} 
-			permalink={siteData.permalink} 
+			title={title} 
+			description={description} 
+			permalink={permalink} 
+			{canonical}
 		/>
-
-		<style>
-			/* Styles go here */
-		</style>
 	</head>
 
-	<body class="bg-primary-black">
-		<div class="flex flex-col md:flex-row justify-between root mx-auto relative">
-			<div class="w-full md:w-2/5 h-screen p-10 md:pr-0 md:py-20 md:pl-20 md:fixed flex flex-col justify-between">
-				
-				<div>
-					<Intro />
-					<div class="mt-14 font-monospace">
-						{links.map((nav, index) => <NavLink nav={nav} serial={index} />)}
-					</div>
-				</div>
+	<body>
+		<slot />
 
-				<Footer />
-      </div>
-
-      <div class="md:w-3/5 md:absolute md:right-0 p-10 md:p-20">
-				<div class="content-group">
-				 	<slot />
-				</div>
-      </div>
-    </div>
+		<Analytics />
 	</body>
 </html>

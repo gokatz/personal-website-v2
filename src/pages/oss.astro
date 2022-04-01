@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Shell from '../layouts/Shell.astro';
+import Home from '../layouts/Home.astro';
 import MansionTile from '../components/MansionTile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
@@ -9,7 +9,7 @@ let allOSSProjects = await Astro.fetchContent('./oss/*.md');
 allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<Shell>
+<Home>
 	<div class="flex flex-wrap">
 		{
 			allOSSProjects.map((project) => {
@@ -17,4 +17,4 @@ allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.date).valueOf() - new 
 			})
 		}
 	</div>
-</Shell>
+</Home>

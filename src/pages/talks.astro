@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Shell from '../layouts/Shell.astro';
+import Home from '../layouts/Home.astro';
 import TalkTile from '../components/TalkTile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
@@ -9,10 +9,10 @@ let allTalks = await Astro.fetchContent('./talks/*.md');
 allTalks = allTalks.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<Shell>
+<Home>
 	{
 		allTalks.map((talk) => {
 			return <TalkTile talk={talk} /> 
 		})
 	}
-</Shell>
+</Home>

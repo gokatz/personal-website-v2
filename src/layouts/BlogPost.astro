@@ -1,4 +1,5 @@
 ---
+import Shell from './Shell.astro';
 import BaseHead from '../components/BaseHead.astro';
 // import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
@@ -12,19 +13,21 @@ const { title, description, date, author, heroImage, permalink, alt, template, c
 const blogWindowTitle = `${title} - ${siteData.siteName}`;
 
 ---
+<Shell title={blogWindowTitle} {description} {permalink} {canonical}>
+	<BackToList template={template} />
+	<div class="wrapper bg-white text-black mx-auto p-6 md:p-10 m-10 prose prose-a:text-primary-blue">
+		<BlogPost {title} {author} {heroImage} {date} {alt}>
+			<slot />
+		</BlogPost>
+	</div>
+</Shell>
 
-<html lang={content.lang || 'en'}>
-	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.css"/>
-		<BaseHead title={blogWindowTitle} {description} {permalink} {canonical} />
-	</head>
+<style>
+@import url("https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.css"); /* Using a url */
 
-	<body class="lg:bg-primary-black">
-		<BackToList template={template} />
-		<div class="wrapper bg-white text-black mx-auto p-6 md:p-10 m-10 prose prose-a:text-primary-blue">
-			<BlogPost {title} {author} {heroImage} {date} {alt}>
-				<slot />
-			</BlogPost>
-		</div>
-	</body>
-</html>
+@media (min-width: 1024px) {
+	body {
+		background-color: #151515;
+	}
+}
+</style>
