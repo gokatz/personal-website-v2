@@ -3,18 +3,20 @@ import BaseHead from '../components/BaseHead.astro';
 // import BlogHeader from '../components/BlogHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
 import BackToList from '../components/BackToList.astro';
+import siteData from '../data';
 import '../styles/blog.css';
 
 
 const { content } = Astro.props;
 const { title, description, date, author, heroImage, permalink, alt, template, canonical } = content;
+const blogWindowTitle = `${title} - ${siteData.siteName}`;
 
 ---
 
 <html lang={content.lang || 'en'}>
 	<head>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.css"/>
-		<BaseHead {title} {description} {permalink} {canonical} />
+		<BaseHead title={blogWindowTitle} {description} {permalink} {canonical} />
 	</head>
 
 	<body class="lg:bg-primary-black">
