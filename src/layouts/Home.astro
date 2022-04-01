@@ -1,0 +1,48 @@
+---
+import Shell from './Shell.astro';
+import Intro from '../components/Intro.astro';
+import NavLink from '../components/NavLink.astro';
+import Footer from '../components/Footer.astro';
+
+const links = [{
+	title: 'Blogs',
+	url: '/'
+}, {
+	title: 'Projects',
+	url: '/projects'
+}, {
+	title: 'OSS Love',
+	url: '/oss'
+}, {
+	title: 'Talks',
+	url: '/talks'
+}];
+
+---
+<Shell>
+	<div class="flex flex-col md:flex-row justify-between root mx-auto relative">
+		<div class="w-full md:w-2/5 h-screen p-10 md:pr-0 md:py-20 md:pl-20 md:fixed flex flex-col justify-between">
+			
+			<div>
+				<Intro />
+				<div class="mt-14 font-monospace">
+					{links.map((nav, index) => <NavLink nav={nav} serial={index} />)}
+				</div>
+			</div>
+
+			<Footer />
+		</div>
+
+		<div class="md:w-3/5 md:absolute md:right-0 p-10 md:p-20">
+			<div class="content-group">
+				<slot />
+			</div>
+		</div>
+	</div>
+</Shell>
+
+<style>
+body {
+	background-color: #151515;
+}
+</style>
