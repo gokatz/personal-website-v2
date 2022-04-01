@@ -12,7 +12,7 @@ tags:
   - "LifeLessons"
 canonical: https://dev.to/gokatz/fun-with-foreach-1p1o
 description: "Disclaimer: Not a tech blog! TL;DR - Gonna resume my blogging habit! 🔥"
-heroImage: "/assets/images/track.jpeg"
+heroImage: "/assets/images/track.jpg"
 layout: ../../layouts/BlogPost.astro
 ---
 
