@@ -27,7 +27,14 @@ const { icon: Icon, title, url } = (icons[name] || {});
 ---
 
 <a 
-  class="text-white text-sm mx-4 my-2 flex social-icons relative cursor-pointer link-line-design" 
+  class="
+    text-white text-xs md:text-sm 
+    mx-3 md:mx-4 my-2 
+    flex items-center 
+    social-icons 
+    relative 
+    cursor-pointer link-line-design
+  " 
   href={url} 
   target="_blank" 
   rel="noopener noreferrer"

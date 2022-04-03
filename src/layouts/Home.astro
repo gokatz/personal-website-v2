@@ -21,7 +21,12 @@ const links = [{
 ---
 <Shell>
 	<div class="flex flex-col md:flex-row justify-between root mx-auto relative">
-		<div class="w-full md:w-2/5 h-screen p-10 md:pr-0 md:py-20 md:pl-20 md:fixed flex flex-col justify-between">
+		<div 
+			class="w-full md:w-2/5 md:h-screen 
+				p-10 md:pr-0 md:py-20 md:pl-20 
+				md:fixed
+				flex flex-col md:justify-between"
+		>
 			
 			<div>
 				<Intro />
@@ -33,7 +38,7 @@ const links = [{
 			<Footer />
 		</div>
 
-		<div class="md:w-3/5 md:absolute md:right-0 p-10 md:p-20">
+		<div class="md:w-3/5 pt-0 md:absolute md:right-0 p-10 md:p-20">
 			<div class="content-group" data-instant>
 				<slot />
 			</div>
