@@ -18,6 +18,8 @@ const links = [{
 	url: '/talks'
 }];
 
+const { isIndexPage } = Astro.props;
+
 ---
 <Shell>
 	<div class="flex flex-col md:flex-row justify-between root mx-auto relative">
@@ -38,13 +40,22 @@ const links = [{
 			<Footer />
 		</div>
 
-		<div class="md:w-3/5 pt-0 md:absolute md:right-0 p-10 md:p-20">
+		<div class="md:w-3/5 pt-0 md:absolute md:right-0 p-10 md:p-20" id="page-content">
 			<div class="content-group" data-instant>
 				<slot />
 			</div>
 		</div>
 	</div>
 </Shell>
+
+<script define:vars={{ isIndexPage }}>
+	let oneColumnLayout = window.matchMedia('(max-width: 767px)');
+
+	if (!isIndexPage && oneColumnLayout.matches) {
+		var element = document.getElementById("page-content");
+		element.scrollIntoView({behavior: "smooth", inline: "nearest"});	
+	}
+</script>
 
 <style>
 body {

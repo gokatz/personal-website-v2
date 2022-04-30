@@ -2,6 +2,7 @@
 // Component Imports
 import Home from '../layouts/Home.astro';
 import BlogTitle from '../components/BlogTitle.astro';
+import PageTitleForMobile from '../components/PageTitleForMobile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
@@ -9,7 +10,8 @@ let allBlogs = await Astro.fetchContent('./blog/*.md');
 allBlogs = allBlogs.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<Home>
+<Home isIndexPage={true}>
+	<PageTitleForMobile title="Blogs" />
 	{
 		allBlogs.map((blog) => {
 			return <BlogTitle blog={blog} /> 

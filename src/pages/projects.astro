@@ -2,6 +2,7 @@
 // Component Imports
 import Home from '../layouts/Home.astro';
 import MansionTile from '../components/MansionTile.astro';
+import PageTitleForMobile from '../components/PageTitleForMobile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
@@ -10,6 +11,7 @@ allProjects = allProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a
 ---
 
 <Home>
+	<PageTitleForMobile title="Projects" />
 	<div class="flex flex-wrap">
 		{
 			allProjects.map((project) => {
