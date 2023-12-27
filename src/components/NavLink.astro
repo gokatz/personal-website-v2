@@ -9,7 +9,13 @@ const { nav, serial } = Astro.props;
 let isActive = false;
 try {
 	const { pathname } = new URL(Astro.request.url);
-	isActive = pathname.endsWith(nav.url) || pathname.endsWith(`${nav.url}/`);
+	const { url } = nav;
+
+	if (url === '/' ) {
+		isActive = pathname === '/' || pathname === ''
+	} else {
+		isActive = pathname.includes(url);	
+	}
 } catch (error) {
 	// No Op
 }
