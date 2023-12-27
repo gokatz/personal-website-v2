@@ -2,7 +2,7 @@
 import Date from './Date.astro';
 
 const { blog } = Astro.props;
-const { title, description, category, date, slug } = blog;
+const { title, description, category, date, slug } = blog.frontmatter;
 ---
 
 <a class="bg-secondary-black p-10 mb-2 tile cursor-pointer block" href={slug}>

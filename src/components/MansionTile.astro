@@ -3,7 +3,7 @@ import Date from './Date.astro';
 import SimpleLinks from './SimpleLinks.astro';
 
 const { content = {} } = Astro.props;
-const { title, description, date, links } = content;
+const { title, description, date, links } = content.frontmatter;
 const containerClass = `bg-secondary-black p-10 m-1 
 tile mansion-tile flex flex-col justify-between`;
 ---

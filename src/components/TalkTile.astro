@@ -3,7 +3,7 @@ import Date from './Date.astro';
 import TalkLinks from './TalkLinks.astro';
 
 const { talk } = Astro.props;
-const { title, description, date, links, conf_name } = talk || {};
+const { title, description, date, links, conf_name } = talk.frontmatter || {};
 ---
 
 <div class="bg-secondary-black p-10 mb-2 tile block">

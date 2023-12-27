@@ -6,6 +6,7 @@ export interface Props {
 	title: string;
 	description: string;
 	permalink: string;
+	canonical?: string;
 }
 const { title, description, permalink, canonical } = Astro.props;
 ---

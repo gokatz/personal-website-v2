@@ -6,8 +6,8 @@ import PageTitleForMobile from '../components/PageTitleForMobile.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allOSSProjects = await Astro.fetchContent('./oss/*.md');
-allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+let allOSSProjects = await Astro.glob('./oss/*.md');
+allOSSProjects = allOSSProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
 
 <Home>

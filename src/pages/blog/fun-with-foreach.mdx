@@ -1,6 +1,4 @@
 ---
-setup: |
-  import Image from '../../components/Image.astro'
 title: "Fun With forEach"
 date: "2019-06-06T10:00:32.169Z"
 template: "post"
@@ -14,6 +12,8 @@ description: "Have fun with forEach by guessing few snippets that we might not e
 layout: ../../layouts/BlogPost.astro
 heroImage: "/assets/images/fun-with-foreach.png" 
 ---
+import Image from '../../components/Image.astro'
+
 ## So, what's2 a forEach?
 
 `forEach` is a little guy who iterates/loops through the array and executes the given callback for each element. It's more like the traditional `for` loop, but with a functional touch. A sample snippet would be like,
@@ -189,6 +189,6 @@ And a fun fact: This title was inspired from the awesome (😉) show hosted by S
 
 <br />
 
-<Image src="/assets/images/bbt-fwf.jpg">
+<Image src="/assets/images/bbt-fwf.jpg"></Image>
 
 

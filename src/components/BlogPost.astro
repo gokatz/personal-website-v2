@@ -7,9 +7,10 @@ import Comments from './Comments.astro';
 export interface Props {
 	title: string;
 	author: string;
-	publishDate: string;
 	heroImage: string;
 	alt: string;
+	date: string;
+	slug: string;
 }
 
 const { title, date, heroImage, alt, slug } = Astro.props;
