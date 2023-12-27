@@ -8,8 +8,8 @@ const { nav, serial } = Astro.props;
 
 let isActive = false;
 try {
-	const urlObject = new URL(Astro.request.url);
-	isActive = urlObject.pathname.endsWith(nav.url);
+	const { pathname } = new URL(Astro.request.url);
+	isActive = pathname.endsWith(nav.url) || pathname.endsWith(`${nav.url}/`);
 } catch (error) {
 	// No Op
 }
