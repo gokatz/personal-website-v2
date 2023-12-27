@@ -16,7 +16,7 @@ tags:
 links:
   - title: Learn More
     internal: true
-    link: projects/useragent-parser-extension
+    link: /projects/useragent-parser-extension
   - title: Chrome
     link: https://addons.mozilla.org/en-US/firefox/addon/user-agent-parser/
   - title: Mozilla

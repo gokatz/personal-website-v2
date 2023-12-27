@@ -30,7 +30,7 @@ That was a mixed feeling. I was really happy that my proposal was selected 🤩 
 
 From that moment, I pour a lot (like a loooottt...) of time in preparing the content and slides. Initially, the content was okayish and I moved on to the preparation part. I'm not a native English speaker and my language fluency is not that much strong especially when it comes to public speaking. So, I started to prepare slide notes. I **literally wrote every single line that I planned to talk** (Beleive me, I even wrote down the greetings and Thank you note).
 
-![](/media/slidedeck.png)
+![](/assets/images/slidedeck.png)
 
 <figcaption>Snap from my original slide deck</figcaption>
 
