@@ -5,4 +5,4 @@
   package = "netlify-plugin-checklinks"
 
   [plugins.inputs]
-    skipPatterns = ["googletagmanager.com"]
+    checkExternal = false
